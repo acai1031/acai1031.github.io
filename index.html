@@ -3,7 +3,9 @@
 <head>
   <meta charset= "utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <!--bootstrap的CSS样式-->
   <link rel="stylesheet" href="style.css">
   <!--使用bootstrap的frame时，仍需要添加自己的样式。自己的样式放在后面，能覆盖bootstrap想要修改的样式。-->
@@ -11,42 +13,43 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">自我介绍<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              爱好
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbar">
+              <a class="dropdown-item" href="#">画画</a>
+              <a class="dropdown-item" href="#">弹琵琶</a>
+              <!--<div class="dropdown-divider"></div>-->
+              <a class="dropdown-item" href="#">橡皮章</a>
+            </div>
+            <!--dropdown需要JS的bootstrap。JS的bootstrap需要放在body部分的最后面-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="photo.html" target="_top">摄影</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="volunteer.html" target="_top">志愿</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">尾声</a>
+          </li>
+        </ul>
+      </div>
+
     </div>
-  </nav>
-
+  </nav><br><br><br>
 
 
   <h1 style="font-size:28px; background-color:rgba(255,255,0,0.25);">欢迎来到<br>Acai<br>的空间</h1>
@@ -63,10 +66,6 @@
       <!--这里可以写<label for="">link section</label>作为link开始了的提示-->
       <a href="#hobby"><br>
         转到小小动力——我的爱好
-      <a href="#记录生活——不到入门级摄影"><br>
-        转到记录生活——不到入门级摄影
-      <a href="#星点贡献——我的志愿生涯"><br>
-        转到星点贡献——我的志愿生涯
       </a>
       <!--一定要加#这个键啊！不然就错了！-->
   </p>
@@ -96,11 +95,13 @@
       <img src="照片\水粉6.jpg" alt="水粉" height="320" width="425"><br>
       <img src="照片\水粉7.jpg" alt="雪山" height="320" width="425"><br>
       <img src="照片\水粉和我？.jpg" alt="水粉和我？" height="259" width="460">
+    </p>
       <div>
         小学毕业那会，就用美术特长生考去了十九中，顺理成章的进了美术社团。
         在美术社团学的还是素描和水粉，也画了墙绘，尝试了一点点水彩。水彩以失败而告终。画井盖和画墙都是全新的尝试，同样的磨人却又有趣。画一块墙从清理墙面到留下自己的大名要花一天的时间。
         清理墙面，铺底色，画主体，画整体，扣细节，最后签名，完成！画完了以后顶顶骄傲和自豪。高一的时候也回去和同学一起画墙来着！主题是中国戏剧，画了一个大美女。
       </div>
+    <p>
       <img src="照片\水彩1.jpg" alt="水彩" height="425" width="320"><br>
       <img src="照片\水彩2.jpg" alt="水彩" height="425" width="320"><br>
       <img src="照片\橙子合照.jpg" alt="和同学的合影" width="320" height="425"><br>
@@ -121,6 +122,7 @@
       <img src="照片\手绘3.jpg" alt="头像" height="320" width="425"><br>
       <img src="照片\手绘4.jpg" alt="新春贺图" height="320" width="425"><br>
     </p>
+
     <h3 style="color:Dodgerblue;">弹琵琶</h3>
     <p>
       是二年级开始学的琵琶。据我妈说，说我看电视上人家大姐姐穿旗袍弹琵琶好看所以才想学琴。现在这是什么神奇的理由。<br>
@@ -128,29 +130,32 @@
       <video height="288" width="384" controls>
         <source src="照片\第一次登台演出.mp4" type="video/mp4">
       </video>
+    </p>
       <div>上初中后，就去了我们初中的乐团。在北京市第十九中学金帆民乐团的一年多的时间是我最难忘的经之一。其实初一的时候就找过乐团的老师了，但那会不想去。初二的时候还是进去了，最开始很陌生。两个高中的学姐，两个同年级的女生，还有两个初一的学妹。
       尴尬的点就在于，两个人一个谱架台，我正好单着了，其实还好。在乐团不同于去上小班课，老师不会特意的照顾你。就在这个环境下学会了调弦，换弦。那会算是成长了很多。
       有点压力是在于训练的老师吧，他就乐意坐在单着的人旁边。总指挥时不时来一下，带着浓郁的古龙香水的味道。
-      初二半个学期的合奏适应期就在古龙香水和槟榔味儿中度过。下学期的时候，因为同届的有个女生回老家了，我终于可以换到二谱台了！</div>
-      <br>合奏的经历，说好玩也好玩，说无趣倒是也无趣。合奏总比一个人独奏强，团体总是能掩盖个人的小缺点。但是当整体都很好的时候，个人的缺点又十分突兀了。还记得那会练
+      初二半个学期的合奏适应期就在古龙香水和槟榔味儿中度过。下学期的时候，因为同届的有个女生回老家了，我终于可以换到二谱台了！
+      </div>
+      <p>合奏的经历，说好玩也好玩，说无趣倒是也无趣。合奏总比一个人独奏强，团体总是能掩盖个人的小缺点。但是当整体都很好的时候，个人的缺点又十分突兀了。还记得那会练
       《大宅门》，有一段琵琶声部的单独的solo，我老怕弹错，就不敢大声弹。声音一小了就会被欧哥（声部长）说，让我大点声，那好吧，那就大点声。
       在初二的时候参加了两次演出。（喜欢我们的演出服，青花瓷样式的，可惜我一毕业就换新的了。）第一次去非常异常的紧张。抱着琵琶的手就跟要去考级似的，不停的出汗。坐好后，
       等到指挥给指令，才不那么紧张。后来的两次演出因为第一次的经验就很放松了，更加享受在台上演奏的感觉。<br>
-     <img src="照片\二十届艺术展演.jpg" alt="演出照" height="345" width="518"><br>
-     <img src="照片\二十届艺术展演 近.jpg" alt="演出照" height="345" width="518"><br>
-     <img src="照片\琵琶声部2.jpg" alt="弹拨声部" height="345" width="518"><br>
-     <img src="照片\琵琶声部.jpg" alt="弹拨声部" height="272" width="412"><br>
-     <img src="照片\憨憨合照.jpg" alt="我和同学的合影" height="432" width="324"><br>
-     <img src="照片\三十九中交流演出.jpg" alt="与青岛三十九中交流演出" height="288" width="384"><br>
-     <img src="照片\三十九中交流合照.jpg" alt="与青岛三十九中交流演出" height="280" width="400"><br>
-     <iframe height=280 width=400 src='https://player.youku.com/embed/XNDYyNTQ4MjQ5Ng==' frameborder=0 'allowfullscreen'></iframe>>
-    </p>
+         <img src="照片\二十届艺术展演.jpg" alt="演出照" height="345" width="518"><br>
+         <img src="照片\二十届艺术展演 近.jpg" alt="演出照" height="345" width="518"><br>
+         <img src="照片\琵琶声部2.jpg" alt="弹拨声部" height="345" width="518"><br>
+         <img src="照片\琵琶声部.jpg" alt="弹拨声部" height="272" width="412"><br>
+         <img src="照片\憨憨合照.jpg" alt="我和同学的合影" height="432" width="324"><br>
+         <img src="照片\三十九中交流演出.jpg" alt="与青岛三十九中交流演出" height="288" width="384"><br>
+         <img src="照片\三十九中交流合照.jpg" alt="与青岛三十九中交流演出" height="280" width="400"><br>
+         <iframe height=280 width=400 src='https://player.youku.com/embed/XNDYyNTQ4MjQ5Ng==' frameborder=0 'allowfullscreen'></iframe>>
+      </p>
+
     <h3 style="color:Dodgerblue;">橡皮章</h3>
     <p>
       刻橡皮章是从初一开始的。初中设了有选修课，我就迷迷糊糊选了一点都不了解的橡皮章。第一个章子是熊猫，应该是史上最丑，没有之一，看起来毫无天赋，但还是能看得过去。
       回家后就买了一个新手套装（警告：别买），一般般难用。跟着老师刻了一整年，自己初一闲的琢磨琢磨，算是小有成就。有的时候同学还让我帮他们刻呢。初二就是自己的霍霍时光。
-      上课听听讲，下课刻刻章，满世界都是橡皮渣滓。初三的时候因为中考，放下了一年。等一考完，立马就捡起来了。我可以算是一个章娘了！
-      <div>图案有很多，可以刻喜爱的动漫人物，或者就是简单的猫猫狗狗或者植物，还能当做装饰。<br>
+      上课听听讲，下课刻刻章，满世界都是橡皮渣滓。初三的时候因为中考，放下了一年。等一考完，立马就捡起来了。我可以算是一个章娘了！<br>
+      图案有很多，可以刻喜爱的动漫人物，或者就是简单的猫猫狗狗或者植物，还能当做装饰。<br>
         人生中的第一个章子，是不是很丑哈哈哈。<br>
         <img src="照片\人生中的第一个章子.jpg" alt="人生中的第一个章子" height="416" width="312"><br>
         <img src="照片\安东尼的兔子.jpg" alt="安东尼的兔子" height="312" width="416"><br>
@@ -167,153 +172,16 @@
         <img src="照片\平安喜乐.jpg" alt="平安喜乐" height="416" width="312"><br>
         <img src="照片\镇魂.jpg" alt="字" height="312" width="416"><br>
         <img src="照片\bjt.jpg" alt="字" height="312" width="416"><br>
-        <img src="照片\人狠.jpg" alt="字" height="312" width="312">
-      </div>
+        <img src="照片\人狠.jpg" alt="字" height="312" width="312"><br>
       刻橡皮章算是我的最放松的方式。可以放空自己的脑袋，累的时候什么也不想，想不明白事情的时候也可以什么都想。四年攒下来已经有三四盒章子了。
       上了高中带了艺术社，时不时的带着社员刻章子。大部分的章子刻完以后会印到卡纸上当做明信片或者书签，还有的会当做贺卡送给老师和同学。<br>
-      <img src="照片\圣诞节.jpg" alt="贺卡" height="219" width="288">
-      <img src="照片\书签1.jpg" alt="书签" height="312" width="312">
-      <img src="照片\书签2.jpg" alt="书签" height="312" width="312">
-      <img src="照片\书签3.jpg" alt="书签" height="312" width="312">
+        <img src="照片\圣诞节.jpg" alt="贺卡" height="219" width="288">
+        <img src="照片\书签1.jpg" alt="书签" height="312" width="312">
+        <img src="照片\书签2.jpg" alt="书签" height="312" width="312">
+        <img src="照片\书签3.jpg" alt="书签" height="312" width="312">
     </p>
   </div>
-  <hr />
 
-  <div id="记录生活——不到入门级摄影">
-  <h2 align="center" style="color:navy;">记录生活——不到入门级摄影</h2>
-   <p>真的算一个不到入门级的小白，平常看到好看的景色就喜欢拿着手机或者相机拍下来.<br>
-   <h3 style="color:Dodgerblue;">-云-</h3>
-      每个好看的风景都是老天赏脸（嘻嘻）。大部分的拍摄地点要么在公交车上，要么在去车站的路上。<br>
-    <img src="照片\云1.jpg" height="312" width="312"><br>
-    <img src="照片\云2.jpg" height="312" width="312"><br>
-    <img src="照片\云3.jpg" height="211" width="375"><br>
-    <img src="照片\云4.jpg" height="312" width="312"><br>
-    <img src="照片\云5.jpg" height="312" width="416"><br>
-    <img src="照片\云6.jpg" height="306" width="512"><br>
-    <img src="照片\云7.jpg" height="312" width="416"><br>
-    <img src="照片\云8.jpg" height="312" width="416"><br>
-    <img src="照片\云9.jpg" height="312" width="416"><br>
-    <img src="照片\云10.jpg" height="312" width="312"><br>
-    <img src="照片\云11.jpg" height="312" width="416"><br>
-    <img src="照片\云12.jpg" height="312" width="416"><br>
-   <h3 style="color:Dodgerblue;">-花-</h3>
-    花就很杂了，啥都有。八一大花园的杏花，桃花；我妈养的有水仙，石竹；最后还有乱入的丝瓜花...<br>
-    <img src="照片\花4.5.jpg" height="312" width="312"><br>
-    <img src="照片\花4.jpg" height="312" width="312"><br>
-    <img src="照片\花5.jpg" height="312" width="416"><br>
-    <img src="照片\花6.5.jpg" height="312" width="416"><br>
-    <img src="照片\花1.jpg" height="312" width="416"><br>
-    <img src="照片\花2.jpg" height="312" width="416"><br>
-    <img src="照片\花3.jpg" height="416" width="312"><br>
-    <img src="照片\花7.jpg" height="312" width="416"><br>
-    <img src="照片\花6.jpg" height="312" width="416"><br>
-    <img src="照片\花8.jpg" height="312" width="416"><br>
-   <h3 style="color:Dodgerblue;">-足球-</h3>
-    足球的照片是上学年拍的，自我感觉良好（赞），还没有很多拍动态人物的经验，继续加油！<br>
-    <img src="照片\足1.jpg" height="312" width="416"><br>
-    <img src="照片\足2.jpg" height="312" width="416"><br>
-    <img src="照片\足3.jpg" height="312" width="416"><br>
-    <img src="照片\足4.jpg" height="312" width="416"><br>
-    <img src="照片\足5.jpg" height="312" width="416"><br>
-    <img src="照片\足6.jpg" height="312" width="312"><br>
-   <h3 style="color:Dodgerblue;">-故宫-</h3>
-    好久之前去的故宫啦，最喜欢第二张和第六张，有那种“一入宫门深似海”的感觉。<br>
-    <img src="照片\故宫1.jpg" height="312" width="312"><br>
-    <img src="照片\故宫2.jpg" height="416" width="312"><br>
-    <img src="照片\故宫3.jpg" height="312" width="416"><br>
-    <img src="照片\故宫5.jpg" height="312" width="312"><br>
-    <img src="照片\故宫4.jpg" height="312" width="312"><br>
-    <img src="照片\故宫6.jpg" height="416" width="312"><br>
-   <h3 style="color:Dodgerblue;">-川渝之旅-</h3>
-    是去游学，游学在我身上有奇怪的定律，最开始明明有人跟我一起逛，每每到最后，都只是我独自在景区溜达。喜欢老街那种热闹又掩不住悲凉。<br>
-    <img src="照片\成1.jpg" height="312" width="312"><br>
-    <img src="照片\成2.jpg" height="312" width="312"><br>
-    <img src="照片\成3.jpg" height="416" width="312"><br>
-    <img src="照片\成4.jpg" height="312" width="312"><br>
-    止不住的多拍两张红配绿~<br>
-    <img src="照片\成5.jpg" height="312" width="416"><br>
-    <img src="照片\成6.jpg" height="312" width="416"><br>
-    熊猫真的好赏脸.可爱！<br>
-    <img src="照片\成7.jpg" height="312" width="416"><br>
-   <h3 style="color:Dodgerblue;">-HK-</h3>
-    去香港还是因为考sat:)，但是考试并不能影响我的好心情，开心开心。<br>
-    <img src="照片\香港1.jpg" height="312" width="416"><br>
-    <img src="照片\香港2.jpg" height="312" width="416"><br>
-    <img src="照片\香港3.jpg" height="312" width="416"><br>
-    <img src="照片\香港4.jpg" height="312" width="416"><br>
-    <img src="照片\香港5.jpg" height="312" width="416"><br>
-    <img src="照片\香港6.jpg" height="312" width="416"><br>
-    <img src="照片\香港7.jpg" height="312" width="312"><br>
-    小白说夜景不是很好照，我赞同！照完了还得调啊调，光源太多了。<br>
-    <img src="照片\香港8.jpg" height="312" width="416"><br>
-    <img src="照片\香港9.jpg" height="416" width="312"><br>
-   <h3 style="color:Dodgerblue;">-杂-</h3>
-    最后这部分就是我的杂图了，实名很杂~<br>
-    20年春节蜗居在家，偶尔下雪看着贼开心！（还被恐吓说雪里面有病毒不能玩雪）<br>
-    <img src="照片\杂1.jpg" height="312" width="416"><br>
-    初三上学路上的家属楼，我最喜欢的颜色！曾经无数次吐槽房子都爱红砖色...<br>
-    <img src="照片\杂2.jpg" height="312" width="312"><br>
-    <img src="照片\杂3.jpg" height="416" width="312"><br>
-    还是初三。那天正好下完雨，咋看都好看，最喜欢下完雨后的空气，有泥土混合青草的香味~<br>
-    <img src="照片\杂4.jpg" height="312" width="416"><br>
-    大学里，女学生应该有的样子？<br>
-    <img src="照片\杂5.jpg" height="416" width="312"><br>
-    <img src="照片\杂6.jpg" height="312" width="416"><br>
-    <img src="照片\杂7.jpg" height="312" width="416"><br>
-    <img src="照片\杂8.jpg" height="312" width="416"><br>
-    我妈自己种的小西红柿（赞）<br>
-    <img src="照片\杂9.jpg" height="312" width="312"><br>
-    <img src="照片\杂10.jpg" height="312" width="416"><br>
-    颐和园的夕阳，美美的<br>
-    <img src="照片\杂11.jpg" height="312" width="312"><br>
-    <img src="照片\杂12.jpg" height="312" width="416"><br>
-    很喜欢这张！是中考完去欢乐谷，中途在地铁站等同学的时候照的。<br>
-    <img src="照片\杂13.jpg" height="312" width="416"><br>
-    <img src="照片\杂15.jpg" height="312" width="312"><br>
-    <img src="照片\杂16.jpg" height="312" width="312"><br>
-   </p>
-  </div>
-  <hr />
-
-  <div id="星点贡献——我的志愿生涯">
-  <h2 align="center" style="color:navy;">星点贡献——我的志愿生涯</h2>
-   <p>志愿是从高一开始的。社团招新的那会，有个点儿围了一圈人扫二维码，然后我也扫了，就进了那个微信群。<br>
-     第一个志愿活动在高一的九月份，是一个宣传急救知识的志愿活动，没什么人报名，我抱着试试看的心情就去了。然后去了就挺尴尬了，就不认识的仨学长和我。
-     但是活动本身还是挺好的。先会有专业人士教我们急救，然后我们再向大众传授白金十分钟和急救的知识。 由于地点在宋庆龄青少年文化交流中心，
-     周围来来往往的都是上完课外班的小孩子们。挺锻炼自己的传授能力和亲和度的。忙忙叨叨一下午觉得教别人知识蛮自豪！<br>
-     <img src="照片\急救1.jpg" alt="传授急救知识" height="320" width="425"><br>
-     <img src="照片\急救2.jpg" alt="传授急救知识" height="320" width="425"><br>
-       后来前前后后做了一些零散的志愿活动，就比如说，和同学去康辉老年公寓唱《当你老了》，去了海伦聋儿康复园教小孩子折纸。做这些活动的间隔，
-       因为我是国际部的要找规划，总有规划问我，你的志愿活动给他们改变了什么，这个问题简单来说，没什么，没改变什么。又或者，改变了一点，一点表层的东西。
-       曾经很痛恨自己看到一些很痛心的，很想伸出援手的情况却帮不了什么大忙，并不能从根本上改变这些问题。但后来想了想，改变一点总是改变了，
-       比起什么都不做，慢慢的改变总会在有一天呈现出他最大的成效。<br>
-      <img src="照片\敬老院1.jpg" alt="敬老院唱歌" height="320" width="425"><br>
-      <video height="320" width="425" controls>
-        <source src="照片\敬老院2.mp4" type="video/mp4">
-      </video><br>
-      <img src="照片\海伦1.jpg" alt="青蛙" height="320" width="320"><br>
-      <img src="照片\海伦2.jpg" alt="教折纸" height="320" width="320"><br>
-      到太阳村了，太阳村是重头戏。这是第一次真正意义上的体验生活。我们去太阳村没支教，去搬化肥来着。为啥叫体验生活呢，这个化肥是麻袋装的，
-      一卡车拉来的，50公斤的，大概有200袋不到：）真的搬得时候嘴上笑嘻嘻，心里mmp。我这辈子都没搬过这么多这么沉的东西，搬完之后觉得自己不是女的。<br>
-      关于太阳村的起源，那就有得说了。有关太阳村起源和妈妈咪呀的宣传。这里的孩子都是服刑人员的子女或者是被拐卖然后救下的孩子。
-      太阳村是西安的一名叫张淑琴的女警官创办的，创办的目的就是让这些无辜的孩子有安身之所。北京的这个太阳村经济来源是后面的养殖场，还有草莓地。
-      大一点的孩子们（其实看着挺小），就会去帮着大人种草莓。衣食住行的资金，大部分还是靠捐助，小部分靠卖草莓。但是我没咋看出来捐助很多，虽然有一面墙
-      贴满了各方捐助的表彰，说实在的，（不知道流进了谁的腰包，我看着老师穿的挺好）<br>
-      有三个男孩跟我们一起搬肥料，后来得知跟他们都已经上初中了! 我很惊讶，真的，他们力气很大，很惊讶的是他们会开那个长得跟三蹦子一样的四个轮子的电动小车（不知道叫啥）。
-      我搬了一天的肥料手已经很粗糙了，可以想象到他们的手有多粗糙，没有手套，日复一日各种农活。而且腰肩膀胳膊酸到爆炸！<br>
-      看那白色伟岸的背影：）<br>
-      <img src="照片\太阳村1.jpg" alt="太阳村" height="320" width="425"><br>
-      <img src="照片\太阳村2.jpg" alt="太阳村" height="320" width="425"><br>
-      <img src="照片\太阳村3.jpg" alt="太阳村" height="320" width="425"><br>
-      后面的志愿就很零散啦，去一个网络文学大会做志愿者，扫扫二维码进场馆。站累了还能去逛一逛，也不知道这种混志愿北京时长的志愿活动做了有啥意义。<br>
-      最近做的是一个给山区孩子录音读英文绘本的活动，读好了以后放到公众号上。我这么卡卡卡雷厉风行的人，就及其锻炼自己的轻柔能力，可不能把睡前故事读的
-      像要上战场。<br>
-      <audio controls>
-       <source src="照片\the nonthreatening ghost.mp3" type="audio/mpeg">
-      </audio>
-   </p>
-  </div>
-  <hr />
 
   <h2 style="color:navy;">写在后面的话</h2>
    <p style="background-color:rgba(255,255,0,0.25)">如果能读到这里，那说明这位网页的浏览者肯定是一个很有耐心的人了！感谢每一位能读完的可爱人呀！
@@ -323,4 +191,10 @@
      那么，就到这里吧，有缘自会相见~
    </p>
    <div><textarea>有什么建议都可以写在这里哦~</textarea></div><br>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+ </body>
 </html>
