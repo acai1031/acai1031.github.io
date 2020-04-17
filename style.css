@@ -26,13 +26,13 @@ p{
 
 
 .carousel-inner .item img {
-  width: 25%;
+  width: 28%;
 }
 .carousel-inner > .item > img {
-  width: 25%;
+  width: 28%;
   height: auto;
 }
 .carousel {
-  width: 25%;
-  height: auto;
+    width:28%;
+    height: auto;
 }
