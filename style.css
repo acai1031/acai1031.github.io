@@ -24,22 +24,24 @@ p{
   text-align: center;
 }
 
-
-.carousel-inner .item img {
-  width: 28%;
-}
-.carousel-inner > .item > img {
-  width: 28%;
-  height: auto;
-}
-.carousel{
-  width:28%;
-  height:auto;
-}
-
 #carouselEnd{
     width:100%;
     height: auto;
+}
+
+#carouselp{
+  width:75%;
+  height: auto;
+}
+
+#carouselr{
+  width:70%;
+  height: auto;
+}
+
+#carouselpp{
+  width:100%;
+  height: auto;
 }
 
 .img-responsive{
