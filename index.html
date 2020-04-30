@@ -47,9 +47,27 @@
           </li>
         </ul>
       </div>
-      <audio controls>
+      <!--<audio controls>
        <source src="照片\lolipop.mp3" type="audio/mpeg">
-      </audio>
+      </audio>-->
+      <p id="demo">What day is today?</p>
+      <button onclick="myFunction()">click</button>
+      <script>
+      function myFunction(){
+      	var d = new Date();
+      	var weekday=new Array(7);
+      	weekday[0]="Sunday";
+      	weekday[1]="Monday";
+      	weekday[2]="Tuesday";
+      	weekday[3]="Wednesday";
+      	weekday[4]="Thursday";
+      	weekday[5]="Friday";
+      	weekday[6]="Saturday";
+      	var x = document.getElementById("demo");
+      	x.innerHTML=weekday[d.getDay()];
+      }
+      </script>
+
     </div>
   </nav><br><br><br>
 
