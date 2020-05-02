@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+  <meta charset= "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!--bootstrap的CSS样式-->
+  <link rel="stylesheet" href="style.css">
+  <!--使用bootstrap的frame时，仍需要添加自己的样式。自己的样式放在后面，能覆盖bootstrap想要修改的样式。-->
+  <title>acai的个人网站</title>
+
+  <style type="text/css">
+
+  body {
+      background-image: url("照片/2.jpg");
+      background-color: #cccccc;
+  }
+
+  .heart {
+  		margin: 100px 50px 15px 100px;
+  		width: 200px;
+  		height: 200px;
+  		/* border: 1px solid #0094ff; */
+  		position: relative;
+  		animation-name: shake;
+  		animation-duration: 1s;
+  		animation-iteration-count: infinite;
+  }
+
+  .heart div {
+  		/* border: 1px solid #0094ff; */
+  		width: 100%;
+  		height: 100%;
+  		position: absolute;
+  		background: pink;
+  		animation-name: shadow;
+  		animation-duration: 1s;
+  		animation-iteration-count: infinite;
+  }
+
+  .topLeft,
+  .topRight {
+  		border-radius: 100px 100px 0 0;
+  }
+
+  .topLeft {
+  		transform: translate(-50px, 0) rotate(-45deg);
+  }
+
+  .topRight {
+  		transform: translate(50px, 0) rotate(45deg);
+  }
+
+  .bottom {
+  		transform: translate(0, 64px) rotate(45deg) scale(.9, .9);
+  }
+  /* 定义动画 */
+
+  @keyframes shake {
+  		from {
+  				  transform: scale(.9, .9);
+  		}
+  		to {
+  				  transform: scale(1.1, 1.1);
+  		}
+  }
+
+  @keyframes shadow {
+  		from {}
+  		to {
+  				  box-shadow: 0px 0px 50px pink;
+  		}
+  }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              爱好
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbar">
+              <a class="dropdown-item" href="paint.html" target="_top">画画</a>
+              <a class="dropdown-item" href="pipa.html">弹琵琶</a>
+              <!--<div class="dropdown-divider"></div>-->
+              <a class="dropdown-item" href="ruber.html">橡皮章</a>
+            </div>
+            <!--dropdown需要JS的bootstrap。JS的bootstrap需要放在body部分的最后面-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="photo.html" target="_top">摄影</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="volunteer.html" target="_top">志愿</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ending.html">尾声</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="to mom.html">致老妈</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><br><br><br>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7 col-md-6 col-lg-5">
+        <div class="heart">
+          <div class='topLeft'></div>
+          <div class='topRight'></div>
+          <div class='bottom'></div>
+        </div>
+        <div style="text-align:center; margin:10px 0; font:normal 14px/24px 'MicroSoft YaHei';color:#ffffff">
+        <br><br><br>
+        </div>
+      </div>
+      <div class="col-sm-5 col-md-6 col-lg-7">
+        <div>
+         <h2 style="text-align:center">致老妈</h2>
+         <h6 style="text-align:right">2020.05.03</h6><br>
+         <p>写这个信是因为快到母亲节了，尽管之前也都有通过书面的方式写信或者做手工作为礼物，但这次既然学了这么一个神奇的语言，
+           我就想着用这种新学习的技能来表达自己，嘿。<br>
+           不是第一次给老妈写信了，每次好像说的话大同小异，但还是要写，毕竟能看到我妈的金疙瘩。<br>
+           妈，节日快乐呀，做老妈这么多年，让你辛苦了吧。大多数唱红脸，看到我实在是太不争气的时候唱唱白脸，想想就很累。
+           生气的时候，咱们俩是真的都生气，感觉互相都不能理解自己，当然，大部分你生气的时候，绝对是因为我做错了事情。
+           不生气的时候，也是真的很爱对方。我想，如果我妈跟我是一辈人，那我们一定是很好的闺蜜。
+           做母亲的难处，我说懂也不懂。是那种望子成龙，望女成凤，又担心逼得太紧累到孩子的这种感受吧。可能还有那种无力感，
+           小的时候，老师留的家庭作业家长还能教一下，我们长大后，妈妈都是看着自己的孩子干着急。但也没有关系啊，雏鸟总要学会独立飞行的嘛。<br>
+           我觉得我妈做母亲的高度，应该是没有人能超越的。上得厅堂，下得厨房。虽然很久不当医生了，但生病这么多年，从医生哪儿也学会不少，
+           自己的老本行在生活中的点滴中透露着。做菜说着什么食材什么作用，要是我起个闷包也会分析分析。<br>
+           同学妈妈说我妈属木，种花种草种菜样样在行，我觉得在理。别看我妈没学过这些，网上查查资料，自己发酵营养液，整个阳台都是绿油油的。
+           搬家之前的小院子里，满满的全是瓜果蔬菜，什么丝瓜南瓜，茄子小西红柿，苋菜油麦菜，老丰富了。是个勤劳的劳动人民！<br>
+           说到种菜了，做饭就逃不了了，我妈做饭一等一的棒，嘿。很多很多我都超爱吃，新晋“宠妃”是梅菜扣肉和糖醋小排，还有羊肉馅饼。
+           我体重这么重可能都是我妈做饭好吃的缘故。<br>
+           这两年你的视力也不好了，就开始爱听书了，什么书都有，一本书还会听好多遍，是我学习的榜样。
+
+        </div>
+      </div>
+
+
+
+
+  <br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+ </body>
+</html>
