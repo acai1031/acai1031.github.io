@@ -2,282 +2,109 @@
 <html lang= "en">
   <head>
     <meta charset= "utf-8">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    
     <title>Yishan Cai</title>
-
-    <script src="js/jrj6out.js"></script>
-    <script>try{Typekit.load({ async: false });}catch(e){}</script>
-
     <style>
-      body {
-      position: relative;
-      margin: 0;
-      overflow: hidden;
+    p {
+      text-align: justify;
+      text-indent: 35px;
     }
-
-    .intro-container {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      color: white;
-      text-align: center;
-      margin: 0 auto;
-      right: 0;
-      left: 0;
-    }
-
-    h1 {
-      font-family: 'brandon-grotesque', sans-serif;
-      font-weight: bold;
-      margin-top: 0px;
-      margin-bottom: 0;
-      font-size: 20px;
-    }
-    @media screen and (min-width: 860px) {
-      h1 {
-        font-size: 40px;
-        line-height: 52px;
-      }
-    }
-
-    .fancy-text {
-      font-family: "adobe-garamond-pro",sans-serif;
-      font-style: italic;
-      letter-spacing: 1px;
-      margin-bottom: 17px;
-    }
-
-    .button {
-      position: relative;
-      cursor: pointer;
-      display: inline-block;
-      font-family: 'brandon-grotesque', sans-serif;
-      text-transform: uppercase;
-      min-width: 200px;
-      margin-top: 30px;
-    }
-    .button:hover .border {
-      box-shadow: 0px 0px 10px 0px white;
-    }
-    .button:hover .border .left-plane, .button:hover .border .right-plane {
-      transform: translateX(0%);
-    }
-    .button:hover .text {
-      color: #121212;
-    }
-    .button .border {
-      border: 1px solid white;
-      transform: skewX(-20deg);
-      height: 32px;
-      border-radius: 3px;
-      overflow: hidden;
-      position: relative;
-      transition: .10s ease-out;
-    }
-    .button .border .left-plane, .button .border .right-plane {
-      position: absolute;
-      background: white;
-      height: 32px;
-      width: 100px;
-      transition: .15s ease-out;
-    }
-    .button .border .left-plane {
-      left: 0;
-      transform: translateX(-100%);
-    }
-    .button .border .right-plane {
-      right: 0;
-      transform: translateX(100%);
-    }
-    .button .text {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      transition: .15s ease-out;
-    }
-
-    .x-mark {
-      right: 10px;
-      top: 10px;
-      position: absolute;
-      cursor: pointer;
-      opacity: 0;
-    }
-    .x-mark:hover .right {
-      transform: rotate(-45deg) scaleY(1.2);
-    }
-    .x-mark:hover .left {
-      transform: rotate(45deg) scaleY(1.2);
-    }
-    .x-mark .container {
-      position: relative;
-      width: 20px;
-      height: 20px;
-    }
-    .x-mark .left, .x-mark .right {
-      width: 2px;
-      height: 20px;
-      background: white;
-      position: absolute;
-      border-radius: 3px;
-      transition: .15s ease-out;
-      margin: 0 auto;
-      left: 0;
-      right: 0;
-    }
-    .x-mark .right {
-      transform: rotate(-45deg);
-    }
-    .x-mark .left {
-      transform: rotate(45deg);
-    }
-
-    .sky-container {
-      position: absolute;
-      color: white;
-      text-transform: uppercase;
-      margin: 0 auto;
-      right: 0;
-      left: 0;
-      top: 2%;
-      text-align: center;
-      opacity: 0;
-    }
-    @media screen and (min-width: 860px) {
-      .sky-container {
-        top: 18%;
-        right: 12%;
-        left: auto;
-      }
-    }
-    .sky-container__left, .sky-container__right {
-      display: inline-block;
-      vertical-align: top;
-      font-weight: bold;
-    }
-    .sky-container__left h2, .sky-container__right h2 {
-      font-family: 'brandon-grotesque', sans-serif;
-      font-size: 26px;
-      line-height: 26px;
-      margin: 0;
-    }
-    @media screen and (min-width: 860px) {
-      .sky-container__left h2, .sky-container__right h2 {
-        font-size: 72px;
-        line-height: 68px;
-      }
-    }
-    .sky-container__left {
-      margin-right: 5px;
-    }
-    .sky-container .thirty-one {
-      letter-spacing: 4px;
-    }
-
-    .text-right {
-      text-align: right;
-    }
-
-    .text-left {
-      text-align: left;
-    }
-
-    .twitter:hover a {
-      transform: rotate(-45deg) scale(1.05);
-    }
-    .twitter:hover i {
-      color: #21c2ff;
-    }
-    .twitter a {
-      bottom: -40px;
-      right: -75px;
-      transform: rotate(-45deg);
-    }
-    .twitter i {
-      bottom: 7px;
-      right: 7px;
-      color: #00ACED;
-    }
-
-    .social-icon a {
-      position: absolute;
-      background: white;
-      color: white;
-      box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.3);
-      display: inline-block;
-      width: 150px;
-      height: 80px;
-      transform-origin: 50% 50%;
-      transition: .15s ease-out;
-    }
-    .social-icon i {
-      position: absolute;
-      pointer-events: none;
-      z-index: 1000;
-      transition: .15s ease-out;
-    }
-
-    .youtube:hover a {
-      transform: rotate(45deg) scale(1.05);
-    }
-    .youtube:hover i {
-      color: #ec4c44;
-    }
-    .youtube a {
-      bottom: -40px;
-      left: -75px;
-      transform: rotate(45deg);
-    }
-    .youtube i {
-      bottom: 7px;
-      left: 7px;
-      color: #FFFFFF;
-    }
-
     </style>
-    <script src="js/prefixfree.min.js"></script>
   </head>
 
   <body>
-    <div class="x-mark">
+    <nav id="introNavbar" class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
       <div class="container">
-          <div class="left"></div>
-          <div class="right"></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="experience.html">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="project.html">Project</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Life
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbar">
+                <a class="dropdown-item" href="paint.html">Paint</a>
+                <a class="dropdown-item" href="pipa.html">Pipa</a>
+                <a class="dropdown-item" href="ruber.html">Rubber Stamp</a>
+                <a class="dropdown-item" href="photo.html">Photography</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="icon-container">
+          <span><a href="mailto:yic075@ucsd.edu"><i class="fa fa-envelope"></i></a></span>
+          <span><a href="https://github.com/acai1031"><i class="fab fa-github"></i></a></span>
+          <span><a href="https://www.linkedin.com/in/yishan-cai-760470252/"><i class="fab fa-linkedin"></i></a></span>
+          <span><a href="https://www.instagram.com/aaacai_1031/"><i class="fab fa-instagram"></i></a></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- open image -->
+    <img src="images\open_bg.jpg" alt="Full Page Image" class="full-page-image">
+    <div class="overlay">
+      <h1>&nbsp;I'm Yishan Cai</h1>
+      <p>A <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+    </div>
+
+    <div class="container">
+      <div class="container-fluid">
+
+        <div class="row">
+           <div class="col-sm-7 col-md-6 col-lg-5 mt-5">
+                <img class="img-responsive" src="images\home_img.jpg"><br>
+           </div>
+         <div class="col-sm-5 col-md-6 col-lg-7">
+            <br>
+            <h2>Self Introduction</h2><br><br>
+            <p> My name is Yishan Cai, and you can call me Yishan. </p>
+              <!-- I'm a Data Scientist, Statistical Analyst, Pipa player. 
+              I will graduate with my UC San Diego undergraduate degree, 
+              double majoring in Data Science and Math - Probability&Statistics, in June 2025. 
+              I'm actively looking for data analysis / machine learning roles. 
+              Please contact me at yic075@ucsd.edu if you see me as a fit :)</p> -->
+          </div>
+        </div>
+
       </div>
     </div>
-    <div class="intro-container">
-        <h1>Hi! How are you today?</h1>
-        <div class="button shift-camera-button">
-            <div class="border">
-                <div class="left-plane"></div>
-                <div class="right-plane"></div>
-            </div>
-            <div class="text">To The Stars</div>
-        </div>
+
+    <br><br><br><br>
+  
+    <!-- footer -->
+    <div class="footer">
+      <p> Contact Information </p>
+      <p> yic075@ucsd.edu | cys021031@163.com</p>
     </div>
-    <div class="sky-container">
-        <div class="text-right sky-container__left">
-            <h1>Welcome to Yishan's Homepage!</h1>
-            <a class="btn-light" href="home.html">->click here!</a>
-        </div>
-    </div>
-
-
-
-    <script src='js/jquery.min.js'></script>
-    <script src='js/TweenMax.min.js'></script>
-    <script src='js/three.min.js'></script>
-    <script src="js/index.js"></script>
-
-    <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'STSong';">
-    </div>
+  
+    <!-- Scripts -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 
   </body>
 </html>
