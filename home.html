@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <!--bootstrap的CSS样式-->
     <link rel="stylesheet" href="style.css">
-    <!--使用bootstrap的frame时，仍需要添加自己的样式。自己的样式放在后面，能覆盖bootstrap想要修改的样式。-->
+    
     <title>Yishan Cai</title>
+    <style>
+    p {
+      text-align: justify;
+      text-indent: 35px;
+    }
+    </style>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
       <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -36,7 +40,9 @@
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hobby</a>
+              <a class="nav-link dropdown-toggle" href="#" id="navbar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Life
+              </a>
               <div class="dropdown-menu" aria-labelledby="navbar">
                 <a class="dropdown-item" href="paint.html">Paint</a>
                 <a class="dropdown-item" href="pipa.html">Pipa</a>
@@ -48,20 +54,26 @@
             </li>
           </ul>
         </div>
-      
         <div class="icon-container">
+          <span><a href="mailto:yic075@ucsd.edu"><i class="fa fa-envelope"></i></a></span>
           <span><a href="https://github.com/acai1031"><i class="fab fa-github"></i></a></span>
           <span><a href="https://www.linkedin.com/in/yishan-cai-760470252/"><i class="fab fa-linkedin"></i></a></span>
           <span><a href="https://www.instagram.com/aaacai_1031/"><i class="fab fa-instagram"></i></a></span>
         </div>
-
       </div>
-    </nav><br><br><br>
+    </nav>
 
+    <!-- open image -->
+    <img src="images\open_bg5.jpg" alt="Full Page Image" class="full-page-image">
+    <div class="overlay">
+      <h1>I'm Yishan Cai</h1>
+      <p>Data Scientist </p>
+    </div>
+    <br><br>
 
-    <h1 style="font-size:32px;">欢迎来到<br>Acai<br>的空间</h1>
     <div class="container">
       <div class="container-fluid">
+
         <div class="row">
            <div class="col-sm-7 col-md-6 col-lg-5 mt-5">
                 <img class="img-responsive" src="照片\照片.jpg"><br>
@@ -76,19 +88,6 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-sm-5 col-md-6 col-lg-7">
-            <br><br>
-            <p>身高1米7整，体重emm胖就对了。从初二下好像就没长过个了，体重倒是呈指数增长。<br>
-            生日是万圣节前夜的那天。天蝎女。不信妖魔鬼怪，也无宗教信仰。牙不太好,但是爱吃橡皮糖和棒棒糖!<br>
-            搭这个网站的目的可能就是让更多的人认识和了解我吧。我会在这里分享我自己的成长经历和各种学习经验。<br>
-            如果想要了解我，就继续读下去吧~</p>
-          </div>
-          <div class="col-sm-7 col-md-6 col-lg-5 mt-4">
-            <img class="img-responsive" src="照片\自拍1.jpg"><br>
-            <p>照骗(微笑)</p>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -96,10 +95,12 @@
   
     <!-- footer -->
     <div class="footer">
-      <p> yic075@ucsd.edu |  </p>
+      <p> Contact Information </p>
+      <p> yic075@ucsd.edu | cys021031@163.com</p>
     </div>
-
+  
     <!-- Scripts -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
