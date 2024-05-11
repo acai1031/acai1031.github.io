@@ -10,10 +10,11 @@ window.addEventListener('scroll', function() {
     }
 });
 
+// start: open typing effect
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Data Scientist", "Statistical Analyst", "Data Miner", "Front-End Developer", "Photographer", "Nature Lover"];
+const textArray = ["A Data Scientist", "A Statistical Analyst", "A Data Miner", "A Photographer", "An Artist", "A Nature Lover"];
 const typingDelay = 100;
 const erasingDelay = 100;
 const newTextDelay = 2000;
@@ -51,4 +52,5 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() {
     if(textArray.length) setTimeout(type, newTextDelay + 250);
 })
+// end: open typing effect
 

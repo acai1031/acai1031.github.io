@@ -4,8 +4,8 @@
 }
 
 body {
-  background-image: url("照片/2.jpg");
-  background-color: #cccccc;
+  /* background-image: url("照片/2.jpg"); */
+  background-color: #ffffff;
 }
 
 .full-page-image {
@@ -18,7 +18,7 @@ body {
   position: relative;
   top: 10%;
   left: 50%;
-  transform: translate(-50%, -210%); 
+  transform: translate(-50%, -260%); 
   text-align: left;
   color: white;
   z-index: 1; /* the overlay appears above the image */
@@ -64,7 +64,7 @@ h1{
   border: solid 10px transparent;
   color: black;
   line-height: 150%;
-  background-color:rgba(255,255,0,0.25);
+  /* background-color:rgba(255,255,0,0.25); */
 }
 
 h2{
@@ -76,8 +76,9 @@ h3{
   text-align: center;
 }
 
-p{
-  text-align: center;
+.container p {
+  text-align: left;
+  text-indent: 0px;
 }
 
 #carouselEnd{
@@ -183,5 +184,7 @@ input[type="submit"]:hover {
   width: 100%;
   background-color: rgb(229, 244, 191);
   color: rgba(25, 19, 19, 0.879);
+}
+.footer p {
   text-align: center;
 }
