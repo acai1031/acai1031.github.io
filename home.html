@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+    <nav id="introNavbar" class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
       <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -36,9 +36,6 @@
             <li class="nav-item">
               <a class="nav-link" href="project.html">Project</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Life
@@ -47,13 +44,15 @@
                 <a class="dropdown-item" href="paint.html">Paint</a>
                 <a class="dropdown-item" href="pipa.html">Pipa</a>
                 <a class="dropdown-item" href="ruber.html">Rubber Stamp</a>
+                <a class="dropdown-item" href="photo.html">Photography</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="photo.html">Photography</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
+
         <div class="icon-container">
           <span><a href="mailto:yic075@ucsd.edu"><i class="fa fa-envelope"></i></a></span>
           <span><a href="https://github.com/acai1031"><i class="fab fa-github"></i></a></span>
@@ -64,27 +63,28 @@
     </nav>
 
     <!-- open image -->
-    <img src="images\open_bg5.jpg" alt="Full Page Image" class="full-page-image">
+    <img src="images\open_bg.jpg" alt="Full Page Image" class="full-page-image">
     <div class="overlay">
-      <h1>I'm Yishan Cai</h1>
-      <p>Data Scientist </p>
+      <h1>&nbsp;I'm Yishan Cai</h1>
+      <p>A <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
     </div>
-    <br><br>
 
     <div class="container">
       <div class="container-fluid">
 
         <div class="row">
            <div class="col-sm-7 col-md-6 col-lg-5 mt-5">
-                <img class="img-responsive" src="照片\照片.jpg"><br>
-                <p>照片,em,放错了</p>
+                <img class="img-responsive" src="images\home_img.jpg"><br>
            </div>
          <div class="col-sm-5 col-md-6 col-lg-7">
             <br>
-            <h2>Acai的自我介绍</h2><br><br>
-            <p>我叫蔡依珊。在北京市八一学校国际部就读高二。初中是隔壁的十九中。<br>
-              是一个简(直)简（来）单（直）单（去），简单粗暴，不会化妆，（真的）胖胖的女生。<br>
-              可能是祖传的爱操心，熟悉的人会叫我珊妈。昵称的由来是，初三操碎的闲心：）</p>
+            <h2>Self Introduction</h2><br><br>
+            <p> My name is Yishan Cai, and you can call me Yishan. </p>
+              <!-- I'm a Data Scientist, Statistical Analyst, Pipa player. 
+              I will graduate with my UC San Diego undergraduate degree, 
+              double majoring in Data Science and Math - Probability&Statistics, in June 2025. 
+              I'm actively looking for data analysis / machine learning roles. 
+              Please contact me at yic075@ucsd.edu if you see me as a fit :)</p> -->
           </div>
         </div>
 
@@ -104,6 +104,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 
   </body>
 </html>
