@@ -3,9 +3,9 @@ window.addEventListener('scroll', function() {
     var navbar = document.getElementById('introNavbar');
     if (window.scrollY > document.querySelector('.full-page-image').offsetHeight) {
         navbar.classList.remove('bg-transparent');
-        navbar.classList.add('bg-light');
+        navbar.classList.add('bg-light', 'with-box-shadow'); 
     } else {
-        navbar.classList.remove('bg-light');
+        navbar.classList.remove('bg-light', 'with-box-shadow');
         navbar.classList.add('bg-transparent');
     }
 });
