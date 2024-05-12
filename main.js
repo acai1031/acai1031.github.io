@@ -1,4 +1,4 @@
-// scroll down from transparent to light
+// scroll down change navbar from transparent to light
 window.addEventListener('scroll', function() {
     var navbar = document.getElementById('introNavbar');
     if (window.scrollY > document.querySelector('.full-page-image').offsetHeight) {
@@ -10,11 +10,12 @@ window.addEventListener('scroll', function() {
     }
 });
 
+
 // start: open typing effect
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["A Data Scientist", "A Statistical Analyst", "A Data Miner", "A Photographer", "An Artist", "A Nature Lover"];
+const textArray = ["A Data Scientist", "A Statistical Analyst", "An Artist", "A Photographer", "A Nature Lover"];
 const typingDelay = 100;
 const erasingDelay = 100;
 const newTextDelay = 2000;

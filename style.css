@@ -5,7 +5,6 @@
 }
 
 body {
-  /* background-image: url("照片/2.jpg"); */
   background-color: #ffffff;
 }
 
@@ -17,14 +16,12 @@ body {
 
 .overlay {
   position: relative;
-  top: 10%;
   left: 50%;
-  transform: translate(-50%, -280%); 
+  transform: translate(-110%, -340%); 
   text-align: left;
   color: white;
-  z-index: 1; /* the overlay appears above the image */
-  width: 90%;
-  max-width: 1100px;
+  z-index: 1;
+  max-width: 500px;
   /* border: 2px solid red; */
 }
 .overlay h1 {
@@ -61,10 +58,11 @@ body {
   100% {background-color: #ccc;}
 }
 
-h1{
-  border: solid 10px transparent;
-  color: black;
-  line-height: 150%;
+h1 {
+  text-align: left;
+  color: rgb(30, 30, 130);
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 h2 {
@@ -75,8 +73,20 @@ h2 {
   /* border: 1px solid #be0707; */
 }
 
-h3{
+h3 {
   text-align: center;
+}
+
+li {
+  margin-left: 30px;
+}
+
+.intro-effect {
+  color: rgb(57, 154, 250);
+}
+
+.row {
+  /* border: 1px solid #be0707; */
 }
 
 .container p {
@@ -85,7 +95,6 @@ h3{
   text-indent: 0px;
   margin-right: 30px;
   margin-left: 30px;
-  /* border: 1px solid #be0707; */
 }
 
 #carouselEnd{
@@ -109,7 +118,6 @@ h3{
 }
 
 .img-responsive{
-  margin-top: -20px;
   width:100%;
   height:auto;
 }
@@ -146,11 +154,6 @@ h3{
   border: 1px solid #cfcfcf;
   border-radius: 5px;
   margin-left: 30px;
-}
-#contact-title {
-  color: rgb(30, 30, 130);
-  margin-left: 30px;
-  border: 1px solid #ffffff;
 }
 
 .fields {
@@ -192,15 +195,14 @@ input[type="submit"]:hover {
   background-color: #0056b3;
 }
 
-.footer {
+.copyright {
   position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
-  /* background-color: rgb(229, 244, 191); */
   background-color: #f8f9fa;
   color: rgba(25, 19, 19, 0.879);
 }
-.footer p {
+.copyright p {
   text-align: center;
 }
