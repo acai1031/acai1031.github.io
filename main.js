@@ -10,6 +10,22 @@ window.addEventListener('scroll', function() {
     }
 });
 
+// scroll down change navbar from home to experience
+$(document).ready(function() {
+    $(window).scroll(function() {
+      var scrollDistance = $(window).scrollTop();
+      var expTop = $('#row-exp').offset().top;
+  
+      if (scrollDistance >= expTop) {
+        $('.navbar-nav .nav-item').removeClass('active');
+        $('.navbar-nav .nav-item:nth-child(2)').addClass('active');
+      } else {
+        $('.navbar-nav .nav-item').removeClass('active');
+        $('.navbar-nav .nav-item:first-child').addClass('active');
+      }
+    });
+});
+
 
 // start: open typing effect
 const typedTextSpan = document.querySelector(".typed-text");
