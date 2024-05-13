@@ -136,6 +136,11 @@ li {
   height:auto;
   margin-top: -20px;
 }
+.img-proj{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 .with-box-shadow {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
