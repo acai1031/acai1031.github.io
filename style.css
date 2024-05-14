@@ -1,6 +1,4 @@
 * {
-  /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-  /* font-family: inherit; */
   font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -81,7 +79,11 @@ li {
 }
 
 .intro-effect {
-  color: rgb(57, 154, 250);
+  /* color: rgb(57, 154, 250); */
+  color: #2e6cc9;
+}
+.intro-effect:hover {
+  color: #0056b3;
 }
 
 .container {
@@ -137,7 +139,7 @@ li {
   margin-top: -20px;
 }
 .img-proj{
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }
