@@ -34,6 +34,31 @@ body {
   overflow: hidden;
 }
 
+.word-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  object-fit: cover;
+  background-image: url('images/life_bg.jpg'); 
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.3s ease;
+}
+.word {
+  color: rgb(255, 255, 255);
+  opacity: 0.7;
+  font-size: 30px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.word:hover {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  text-decoration: none;
+}
+
+
 .typed-text {
   font-weight: normal;
   color: white;
@@ -160,10 +185,9 @@ li {
   margin-left: 0;
 }
 .icon-container a {
-  color: rgba(118, 116, 116, 0.879);
+  color: rgba(122, 120, 120, 0.879);
 }
 .icon-container a:hover {
-  /* color: rgba(56, 47, 47, 0.879); */
   color: #343a40;
 }
 

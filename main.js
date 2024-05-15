@@ -71,3 +71,17 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 // end: open typing effect
 
+
+const words = document.querySelectorAll('.word');
+const wordContainer = document.querySelector('.word-container');
+
+words.forEach((word) => {
+    word.addEventListener('mouseenter', () => {
+        const hoverImage = word.getAttribute('data-hover-image');
+        wordContainer.style.backgroundImage = `url(${hoverImage})`;
+    });
+
+    word.addEventListener('mouseleave', () => {
+        wordContainer.style.backgroundImage = 'url(images/life_bg.jpg)'; // Reset to default background image
+    });
+});

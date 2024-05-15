@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     
-    <title>Contact - Yishan Cai</title>
+    <title>Yishan Cai</title>
     <style>
     p {
       text-align: justify;
@@ -23,8 +23,8 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);">
-      <div class="container">
+    <nav id="introNavbar" class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+      <div class = "container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -39,15 +39,16 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="project.html">Project</a>
-            </li>   
-            <li class="nav-item">
-              <a class="nav-link" href="life.html">Life </span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="life.html">Life <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
+
         <div class="icon-container">
           <span><a href="mailto:yic075@ucsd.edu"><i class="fa fa-envelope"></i></a></span>
           <span><a href="https://github.com/acai1031"><i class="fab fa-github"></i></a></span>
@@ -56,53 +57,11 @@
         </div>
       </div>
     </nav>
-    <br><br><br><br><br>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-7 col-md-6 col-lg-5">
-          <img src="images\contact_img.jpg" class="d-block w-100" alt="...">
-        </div>
-
-        <div class="col-sm-5 col-md-6 col-lg-7">
-          <h1> Contact </h1> 
-          <br>
-          <div class="form-container" style="background-color:rgba(235, 235, 88, 0.25)">
-            <p style="margin-right: 0px; margin-left: 0px;"> Feel free to drop your message, I'll get back to you ASAP! 😊 </p>
-            <form method="post" action="mailto:yic075@ucsd.edu" enctype="text/plain">
-              <div class="fields">
-                <div class="field">
-                  <label for="name"> Name </label>
-                  <input type="text" name="name" id="name" />
-                </div>
-                <div class="field">
-                  <label for="email"> Email</label>
-                  <input type="text" name="email" id="email" />
-                </div>
-                <div class="field">
-                  <label for="subject"> Subject </label>
-                  <input type="text" name="subject" id="subject" />
-                </div>
-                <div class="field">
-                  <label for="message"> Message </label>
-                  <textarea name="message" id="message" rows="3"></textarea>
-                </div>
-              </div>
-              <ul class="actions">
-                  <input type="submit" value="Send Message" />
-              </ul>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br><br><br><br>
-
-    <!-- <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=306&t=t&d=uykzlUvWR0yggTLG1WGcCbfE8Z9I122s2gcLJvqTs7A&co=343cc6&cmo=c4fe40&cmn=fcd61f&ct=ffffff"></script> -->
-
-    <!-- copyright -->
-    <div class="copyright">
-      <p> Copyright Yishan Cai &copy 2024 </p>
+    <div class="word-container">
+        <a href="paint.html" class="word" id="word1" data-hover-image="images/life-art.jpg"> Art </a>
+        <a href="photo.html" class="word" id="word2" data-hover-image="images/life-photo.jpg"> Photography </a>
+        <a href="pipa.html" class="word" id="word3" data-hover-image="images/life-pipa.jpg"> Pipa</a>
     </div>
   
     <!-- Scripts -->
@@ -110,6 +69,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 
   </body>
 </html>
