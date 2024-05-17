@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 // end: open typing effect
 
-
+// life background image shift
 const words = document.querySelectorAll('.word');
 const wordContainer = document.querySelector('.word-container');
 
