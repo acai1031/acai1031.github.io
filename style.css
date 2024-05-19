@@ -160,24 +160,43 @@ li {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 2%;
+  margin-top: -30px;
+  border-radius: 3%;
+}
+.photo-item {
+  width: 32%;
+  text-align: center;
 }
 .photo-container img {
-  width: 32%;
-  border-radius: 2%;
+  width: 100%;
+  border-radius: 3%;
+}
+.photo-container h5 {
+  text-align: left;
+  padding-left: 7px;
 }
 @media screen and (max-width: 768px) {
   .photo-container {
     flex-direction: column;
     align-items: center;
   }
-  .photo-container img {
+  .photo-item {
     width: 85%;
     margin-bottom: 20px;
   }
 }
-
-
+.bottom-left {
+  position: relative;
+  left: 47%;
+  transform: translate(-110%, -300%); 
+  text-align: left;
+  z-index: 1;
+  max-width: 460px;
+}
+.bottom-left h1 {
+  color: white;
+  background-color: transparent;
+}
 
 
 .with-box-shadow {
@@ -286,4 +305,4 @@ input[type="submit"]:hover {
 .timeline-date {
   font-style: italic;
   color: #999;
-} 
+}
