@@ -124,6 +124,12 @@ li {
   margin-right: 30px;
   margin-left: 30px;
 }
+#row-exp {
+  padding-bottom: 10%;
+}
+#row-project {
+  padding-bottom: 55%;
+}
 
 .row {
   padding-left: 100px;
