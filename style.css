@@ -102,6 +102,11 @@ li {
   margin-left: 30px;
 }
 
+.italic-time {
+  font-style: italic;
+  color: #828282;
+}
+
 .intro-effect {
   color: #0056b3;
   text-emphasis: open rgba(90, 200, 160, 0.8);
@@ -308,7 +313,7 @@ input[type="submit"]:hover {
 .timeline-content p {
   font-size: 20px;
 }
-.timeline-date {
+/* .timeline-date {
   font-style: italic;
   color: #999;
-}
+} */
