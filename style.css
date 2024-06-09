@@ -317,3 +317,49 @@ input[type="submit"]:hover {
   font-style: italic;
   color: #999;
 } */
+
+
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.gallery .item {
+  flex: 1 1 calc(33.333% - 20px); /* Adjust the -20px to the gap size */
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.gallery img,
+.gallery video,
+.gallery iframe {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery iframe {
+  height: 100%; /* Ensure iframe takes full height of the container */
+}
+
+.item video,
+.item iframe {
+  aspect-ratio: 16 / 9; /* Ensure both video and iframe have the same aspect ratio */
+}
+
+@media (max-width: 768px) {
+  .gallery .item {
+      flex: 1 1 calc(50% - 20px); /* Adjust to 2 items per row for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery .item {
+      flex: 1 1 100%; /* Adjust to 1 item per row for very small screens */
+  }
+}
