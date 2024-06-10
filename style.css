@@ -313,12 +313,6 @@ input[type="submit"]:hover {
 .timeline-content p {
   font-size: 20px;
 }
-/* .timeline-date {
-  font-style: italic;
-  color: #999;
-} */
-
-
 
 
 .gallery {
@@ -330,7 +324,7 @@ input[type="submit"]:hover {
 }
 
 .gallery .item {
-  flex: 1 1 calc(33.333% - 20px); /* Adjust the -20px to the gap size */
+  flex: 1 1 calc(33.333% - 20px);
   box-sizing: border-box;
   margin-bottom: 10px;
 }
@@ -344,22 +338,93 @@ input[type="submit"]:hover {
 }
 
 .gallery iframe {
-  height: 100%; /* Ensure iframe takes full height of the container */
+  height: 100%;
 }
 
 .item video,
 .item iframe {
-  aspect-ratio: 16 / 9; /* Ensure both video and iframe have the same aspect ratio */
+  aspect-ratio: 16 / 9;
 }
 
 @media (max-width: 768px) {
   .gallery .item {
-      flex: 1 1 calc(50% - 20px); /* Adjust to 2 items per row for smaller screens */
+      flex: 1 1 calc(50% - 20px);
   }
 }
 
 @media (max-width: 480px) {
   .gallery .item {
-      flex: 1 1 100%; /* Adjust to 1 item per row for very small screens */
+      flex: 1 1 100%;
   }
+}
+
+
+
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.photo-link {
+  position: relative;
+  flex: 1 1 calc(50% - 20px);
+  text-decoration: none;
+  color: white;
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.photo-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-link:hover .photo-overlay {
+  opacity: 1;
+}
+
+.photo-title {
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+}
+
+
+
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.photo-grid a {
+  flex: 1 1 calc(25% - 20px); /* Adjust percentage to fit 3-4 photos per row */
+  box-sizing: border-box;
+}
+
+.photo-thumb {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
 }
