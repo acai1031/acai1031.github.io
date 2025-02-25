@@ -13,24 +13,30 @@ body {
 }
 
 .overlay {
-  position: relative;
-  left: 50%;
-  transform: translate(-110%, -340%); 
-  text-align: left;
+  position: absolute;
+  left: 15%;
+  top: 53%;
+  transform: translateY(-50%);
   color: white;
   z-index: 1;
-  max-width: 500px;
+  max-width: 80%; 
+  padding: 0 15px;
 }
+  
 .overlay h1 {
   color: white;
-  font-size: 3rem;
-  background-color: transparent;
+  font-size: calc(2.3rem + 1vw);
+  margin: 0;
+  padding: 0;
   text-align: left;
+  margin-bottom: 15px;
+  width: 100%;
 }
+  
 .overlay p {
-  font-size: 1.5rem;
-  text-align: left;
-  overflow: hidden;
+  font-size: calc(1.2rem + 0.5vw);
+  text-align: left !important;
+  text-indent: 0 !important;
 }
 
 .word-container {
@@ -231,7 +237,6 @@ li {
 .icon-container a:hover {
   color: #343a40;
 }
-
 
 .form-container {
   padding: 40px;
